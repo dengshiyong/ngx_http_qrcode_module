@@ -15,14 +15,14 @@ Examples
     
       #set with constant
       location /qr_with_con {
-        qrcode_fg_color FF0000;
+        qrcode_fg_color 000000;
         qrcode_bg_color FFFFFF;    
         qrcode_level 2;
         qrcode_hint 2;
-        qrcode_size 8;
+        qrcode_size 100;
         qrcode_margin 2;
         qrcode_version 2;
-        qrcode_txt "http://wwww.dcshi.com";
+        qrcode_txt "www.junzilou.com";
         qrcode_casesensitive 1; 
         qrcode_gen;                                                                                                                                                        
       }
@@ -44,7 +44,7 @@ Examples
 	  }  
     }
    
-curl "http://localhost/qr?size=6&fg_color=00FF00&bg_color=fff700&case=1&txt=12a&margin=2&level=0&hint=2&ver=2"
+curl "http://localhost/qr_with_var?size=100&fg_color=000000&bg_color=ffffff&case=1&txt=12a&margin=2&level=0&hint=2&ver=2"
     
 Dependencies
 ============
